@@ -16,7 +16,7 @@ st.set_page_config(page_title='Modelo Neuronal', layout='wide')
 st.sidebar.title("Configuración del Modelo")
 problema = st.sidebar.selectbox("Selecciona el tipo de problema", ["Regresión", "Clasificación"])
 optimizer = st.sidebar.selectbox("Optimizador", ["adam", "sgd"])
-epochs = st.sidebar.slider("Épocas", 10, 500, 100, step=10)
+epochs = st.sidebar.slider("Épocas", 10, 50, 20, step=10)
 
 # Métricas disponibles, ajustadas para compatibilidad con Keras
 metricas_disp = {
